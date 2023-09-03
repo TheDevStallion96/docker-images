@@ -64,5 +64,29 @@ mkdir bin
 echo "Directory structure and files generated for $APP_NAME."
 ```
 
+Directory Structure:
 
+docker-templates/
+│
+├── common/
+│   ├── Dockerfile
+│   ├── docker-compose.yml
+│   └── .env.template
+│
+├── web-app/
+│   ├── Dockerfile
+│   ├── docker-compose.yml
+│   ├── .env.template
+│   └── src/
+│
+├── api/
+│   ├── Dockerfile
+│   ├── docker-compose.yml
+│   ├── .env.template
+│   └── src/
+│
+└── database/
+    ├── Dockerfile
+    ├── docker-compose.yml
+    └── data/
 
