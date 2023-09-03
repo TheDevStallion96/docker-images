@@ -64,8 +64,9 @@ mkdir bin
 echo "Directory structure and files generated for $APP_NAME."
 ```
 
-Directory Structure:
+Template Directory:
 
+```
 docker-templates/
 │
 ├── common/
@@ -89,4 +90,33 @@ docker-templates/
     ├── Dockerfile
     ├── docker-compose.yml
     └── data/
+```
 
+Project Directory Structure:
+
+```
+mycliapp/
+│
+├── mycliapp/               # Main Python package directory
+│   ├── __init__.py
+│   ├── cli.py              # CLI entry point and commands
+│   ├── core.py             # Core functionality of your application
+│   ├── utils.py            # Utility functions
+│
+├── setup.py                # Package setup file for distribution
+├── README.md               # Documentation for your application
+├── LICENSE                 # License file (e.g., MIT, GPL)
+├── requirements.txt        # List of Python dependencies
+├── .gitignore              # Git ignore file
+│
+├── tests/                  # Unit tests directory
+│   ├── __init__.py
+│   ├── test_cli.py         # Tests for the CLI commands
+│   ├── test_core.py        # Tests for core functionality
+│
+├── docs/                   # Documentation directory
+│
+├── examples/               # Example usage and scripts
+│
+└── bin/                    # Executable scripts (optional)
+```
